@@ -1,3 +1,2 @@
 FROM bitnami/odoo:17.0.20240305
-COPY requirements.txt /requirements.txt
-RUN pip install -r requirements.txt
+RUN python3 -m pip install  python-jose && python3 -m pip install pdfminer
