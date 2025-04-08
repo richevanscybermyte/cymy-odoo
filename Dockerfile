@@ -1,4 +1,4 @@
-FROM bitnami/odoo:17.0.20240805
+FROM bitnami/odoo:17.0.20241205
 RUN source /opt/bitnami/odoo/venv/bin/activate; \
     python3 -m pip install pdfminer.six; \
     pip uninstall pyopenssl -y; \
